@@ -26,16 +26,16 @@ public class ShopRepository {
             throw new NotFoundException(id);
         }
 
-            Product[] tmp = new Product[products.length - 1];
-            int copyToIndex = 0;
-            for (Product product : products) {
-                if (product.getId() != id) {
-                    tmp[copyToIndex] = product;
-                    copyToIndex++;
-                }
+        Product[] tmp = new Product[products.length - 1];
+        int copyToIndex = 0;
+        for (Product product : products) {
+            if (product.getId() != id) {
+                tmp[copyToIndex] = product;
+                copyToIndex++;
             }
-            products = tmp;
         }
+        products = tmp;
+    }
 
     private Product findById(int id) {
         for (Product product : products) {

@@ -20,7 +20,7 @@ class ShopRepositoryTest {
 
         Product[] expected = {product1, product2, product3};
         Product[] actual = repo.findAll();
-        Assertions.assertArrayEquals(expected,actual);
+        Assertions.assertArrayEquals(expected, actual);
     }
 
     @Test
@@ -43,7 +43,7 @@ class ShopRepositoryTest {
         Product[] expected = {product1, product3};
         Product[] actual = repo.findAll();
 
-        Assertions.assertArrayEquals(expected,actual);
+        Assertions.assertArrayEquals(expected, actual);
     }
 
 }
